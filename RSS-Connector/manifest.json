@@ -1,0 +1,15 @@
+{
+  "configuration": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "SK-RSS-connector",
+    "type": "object",
+    "properties": {},
+    "required": []
+  },
+  "description": "a connector for RSS feeds",
+  "name": "SK-RSS-connector",
+  "slug": "sk-rss-connector",
+  "categories": [],
+  "uuid": "fe37d3b7-0ad1-466e-a6b1-3a01bd07e911",
+  "version": "0.1.0"
+}
