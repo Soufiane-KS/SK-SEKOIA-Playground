@@ -10,3 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Added intake_key and intake_server to connector configuration
+
+## 0.3.1 - 2026-04-07
+
+### Changed
+
+- added a description

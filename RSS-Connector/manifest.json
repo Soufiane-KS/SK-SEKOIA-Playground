@@ -4,10 +4,10 @@
     "type": "object",
     "properties": {}
   },
-  "description": "a connector for RSS feeds",
+  "description": "a connector for RSS feeds from TheHackerNews.com",
   "name": "SK-RSS-connector",
   "slug": "sk-rss-connector",
   "categories": [],
   "uuid": "fe37d3b7-0ad1-466e-a6b1-3a01bd07e911",
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
