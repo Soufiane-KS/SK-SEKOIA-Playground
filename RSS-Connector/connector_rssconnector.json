@@ -17,10 +17,22 @@
         "description": "Polling frequency in seconds",
         "default": 300,
         "type": "integer"
+      },
+      "intake_key": {
+        "title": "Intake Key",
+        "description": "Intake key to use when sending events",
+        "type": "string"
+      },
+      "intake_server": {
+        "title": "Intake Server",
+        "description": "Intake server URL",
+        "default": "https://intake.sekoia.io",
+        "type": "string"
       }
     },
     "required": [
-      "feed_url"
+      "feed_url",
+      "intake_key"
     ]
   }
 }
