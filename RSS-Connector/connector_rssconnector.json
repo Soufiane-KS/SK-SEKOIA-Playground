@@ -1,0 +1,26 @@
+{
+  "name": "RssConnector",
+  "description": "RssConnector",
+  "uuid": "ffbac105-b70d-5f7f-bdc6-8b87fba1bc59",
+  "docker_parameters": "RssConnector",
+  "arguments": {
+    "title": "SkRssConnectorConfiguration",
+    "type": "object",
+    "properties": {
+      "feed_url": {
+        "title": "Feed Url",
+        "description": "URL of the RSS feed to poll",
+        "type": "string"
+      },
+      "frequency": {
+        "title": "Frequency",
+        "description": "Polling frequency in seconds",
+        "default": 300,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "feed_url"
+    ]
+  }
+}

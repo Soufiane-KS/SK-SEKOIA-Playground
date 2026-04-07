@@ -1,10 +1,8 @@
 {
   "configuration": {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "SK-RSS-connector",
+    "title": "SkRssConnectorModuleConfiguration",
     "type": "object",
-    "properties": {},
-    "required": []
+    "properties": {}
   },
   "description": "a connector for RSS feeds",
   "name": "SK-RSS-connector",
