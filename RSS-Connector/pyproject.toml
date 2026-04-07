@@ -1,24 +1,24 @@
-[project]
-name = "sk-rss-connector-module"
-version = "0.0"
-description = ""
-requires-python = ">=3.11"
-dependencies = [
-    "sekoia-automation-sdk>=1.0",
-    "feedparser"
-]
-
-[dependency-groups]
-dev = [
-    "pytest",
-    "pytest-cov",
-    "requests",
-    "requests-mock",
-]
-
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "sk-rss-connector-module"
+description = ""
+version = "0.0"
+authors = []
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+sekoia-automation-sdk = "^1.22.4"
+feedparser = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+requests = "*"
+requests-mock = "*"
 
 [tool.black]
 line-length = 119
