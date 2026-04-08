@@ -34,3 +34,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Fixed Checkpointing Logic after critical error
+
+## 0.4.2 - 2026-04-08
+
+### Fixed
+
+- Use self.data_path instead of self._data_path for CheckpointDatetime

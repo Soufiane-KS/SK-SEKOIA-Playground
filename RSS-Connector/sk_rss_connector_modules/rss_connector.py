@@ -10,7 +10,7 @@ class RssConnector(Connector):
     def run(self) -> None:
         self.log("RSS Connector starting", level="info")
 
-        self._checkpoint = CheckpointDatetime(path=self._data_path)
+        self._checkpoint = CheckpointDatetime(path=self.data_path)
 
         while self.running:
             self._fetch_and_push()
