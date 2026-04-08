@@ -1,4 +1,5 @@
 import time, json, feedparser
+import requests
 from datetime import datetime, timezone
 from sekoia_automation.connector import Connector
 from sekoia_automation.checkpoint import CheckpointDatetime
@@ -18,7 +19,8 @@ class RssConnector(Connector):
 
     def _fetch_and_push(self) -> None:
         self.log("Fetching feed...", level="info")
-        feed = feedparser.parse(self.configuration.feed_url)
+        response = requests.get(self.configuration.feed_url, timeout=30)
+        feed = feedparser.parse(response.text)
         events = []
         last_checkpoint = self._checkpoint.offset
         latest_date = None
