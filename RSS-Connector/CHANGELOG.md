@@ -35,6 +35,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fixed Checkpointing Logic after critical error
 
+## 0.4.5 - 2026-04-08
+
+### Fixed
+
+- Add try/except around _fetch_and_push to catch and log silent exceptions
+
 ## 0.4.4 - 2026-04-08
 
 ### Fixed

@@ -14,7 +14,10 @@ class RssConnector(Connector):
         self._checkpoint = CheckpointDatetime(path=self.data_path)
 
         while self.running:
-            self._fetch_and_push()
+            try:
+                self._fetch_and_push()
+            except Exception as e:
+                self.log(f"Error during fetch: {e}", level="error")
             time.sleep(self.configuration.frequency)
 
     def _fetch_and_push(self) -> None:
