@@ -35,6 +35,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fixed Checkpointing Logic after critical error
 
+## 0.4.7 - 2026-04-08
+
+### Changed
+
+- Implemented in-memory checkpointing to avoid duplicate events without filesystem dependency
+
 ## 0.4.6 - 2026-04-08
 
 ### Changed
