@@ -17,6 +17,7 @@ class RssConnector(Connector):
             time.sleep(self.configuration.frequency)
 
     def _fetch_and_push(self) -> None:
+        self.log("Fetching feed...", level="info")
         feed = feedparser.parse(self.configuration.feed_url)
         events = []
         last_checkpoint = self._checkpoint.offset

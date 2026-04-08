@@ -35,6 +35,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Fixed Checkpointing Logic after critical error
 
+## 0.4.3 - 2026-04-08
+
+### Added
+
+- Add diagnostic log at start of _fetch_and_push to debug polling
+
 ## 0.4.2 - 2026-04-08
 
 ### Fixed
