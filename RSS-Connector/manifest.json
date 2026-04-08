@@ -9,5 +9,5 @@
   "slug": "sk-rss-connector",
   "categories": ["Threat Intelligence", "Generic"],
   "uuid": "fe37d3b7-0ad1-466e-a6b1-3a01bd07e911",
-  "version": "0.4.5"
+  "version": "0.4.6"
 }
