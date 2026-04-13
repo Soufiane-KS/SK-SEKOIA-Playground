@@ -1,0 +1,38 @@
+{
+  "name": "PfSenseConnector",
+  "description": "PfSenseConnector",
+  "uuid": "5cae0440-eed9-585e-bea0-4524eeb30fde",
+  "docker_parameters": "PfSenseConnector",
+  "arguments": {
+    "title": "PfSenseConnectorConfiguration",
+    "type": "object",
+    "properties": {
+      "listen_port": {
+        "title": "Listen Port",
+        "description": "Port on which the connector will listen for incoming pfSense logs",
+        "default": 514,
+        "type": "integer"
+      },
+      "intake_key": {
+        "title": "Intake Key",
+        "description": "Intake key to use when sending events",
+        "type": "string"
+      },
+      "intake_server": {
+        "title": "Intake Server",
+        "description": "Intake server URL",
+        "default": "https://intake.sekoia.io",
+        "type": "string"
+      },
+      "batch_size": {
+        "title": "Batch Size",
+        "description": "Number of events to batch before sending to intake",
+        "default": 50,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "intake_key"
+    ]
+  }
+}

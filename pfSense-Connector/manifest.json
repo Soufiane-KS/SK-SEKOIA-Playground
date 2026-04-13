@@ -1,0 +1,15 @@
+{
+  "configuration": {
+    "title": "SkPfSenseConnectorModuleConfiguration",
+    "type": "object",
+    "properties": {}
+  },
+  "description": "a connector for pfSense Firewall",
+  "name": "pfSense-connector",
+  "slug": "pfSense-connector",
+  "categories": [
+    "Network"
+  ],
+  "uuid": "2105ae27-e43a-4316-a4a9-a3c47b87989d",
+  "version": "0.1.0"
+}
